@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body background="./66132f65-713b-41e9-b19b-c5c518c212a0.jpg"> <h1>COMMING SOON</h1> 
+
+</body>
+</html>
+<div id="notification">
+</div>
+
+<script>
+  // Simulate showing notification after form submission
+  window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('submitted') === 'true') {
+      const notif = document.getElementById('notification');
+      notif.style.display = 'block';
+      setTimeout(() => {
+        notif.style.display = 'none';
+      }, 3000); // Hide after 3 seconds
+    }
+  };
+</script>
